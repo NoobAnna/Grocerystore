@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+  background-image: url("https://assets.skyfilabs.com/images/blog/online-grocery-recommendation-using-machine-learning.webp");
+}
+    </style>
+</head>
+<link type="text/css" rel="stylesheet" href="Signin.css">
+<div class="head">
+
+    <h1>
+        
+        Sign Up to DGS
+    
+    </h1>
+
+</div>
+<body>
+    <section>
+        
+        <form action="./index.html" onsubmit="return validateForm()" novalidate>
+            
+            <table>
+                <tr><td> <label for="fname">First Name:</label></td>
+                    <td><input id="fname" name="myName" onblur="validate1()" ></td></tr>
+                <tr><td></td><td id="error1"></td></tr>
+                <tr><td> <label for="age">Age: </label></td>
+                    <td> <input type="number"  id="age"  onblur="validate2()"  ></td></tr>
+                <tr><td></td><td id="error2"></td></tr>
+                <tr><td><label for="contact">Mobile Number: </label></td>
+                    <td><input id="contact"  type="tel"  onblur="validate3()"></td></tr>
+                <tr><td></td><td id="error3"></td></tr>
+                <tr><td> <label for="mail">Email Id: </label></td>
+                    <td><input type="email"  id="mail"   onblur="validate4()"></td></tr>
+                <tr><td></td><td id="error4"></td></tr>
+                <tr><td><label for="uname">Set Username: </label></td>
+                    <td> <input type="text"  id="uname"  onblur="validate5()" required></td></tr>
+                <tr><td></td><td id="error5"></td></tr>
+                <tr><td> <label for="pass">Set Password: </label></td>
+                    <td><input type="password"  id="pass" required  onblur="validate6()"></td></tr>
+                <tr><td></td><td id="error6"></td></tr>
+                <tr><td> <label for="confirmpass"> Confirm Password: </label></td>
+                    <td> <input type="password"  id="confirmpass"   onblur="validate7()" required></td></tr>
+                <tr><td></td><td id="error7"></td></tr>
+                <tr><td></td><td> <input type="submit" value="REGISTER"> <input type="reset"></td></tr>
+            </table>
+        </form>
+    </section>
+    <script src="./Signin.js"></script>
+</html>
